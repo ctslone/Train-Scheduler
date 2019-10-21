@@ -1,15 +1,14 @@
 body {
-    
-    color: white;
+    /* color: white; */
 }
 
 #title {
     background-color:#a33d01 !important;
-    color: rgb(56, 56, 56) !important;
+    /* color: rgb(56, 56, 56) !important; */
 }
 
 #train-table th,
     td {
       display: inline-block;
-      width: 16.575%;
+      width: 20%;
     }
