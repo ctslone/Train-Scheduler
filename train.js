@@ -48,7 +48,28 @@ $(document).ready(function () {
         database.ref().on("child_added", function(snapshot) {
             // creating a varible that holds a snapshot of the data at that moment (hence snapshot)
             var sv = snapshot.val();
+
+            // checking
+            console.log("snapshot: " + sv.trainName);
+            console.log("snapshot: " + sv.destination);
+            console.log("snapshot: " + sv.frequency);
+            console.log("snapshot: " + sv.firstTime);
+            console.log("snapshot: " + sv.dateAdded);
+
+            var nameTd = $("<td>").text(sv.trainName);
+            var destinationTd =$("<td>").text(sv.destination);
+            var frequencyTd = $("<td>").text(sv.frequency);
+            var nextArrivalTd =$("<td>");
+            var minutesAwayTd =$("<td>");
+
+            var currentTime = moment();
+
+
+            var tR = $("<tr>");
+            tR.append(nameTd, destinationTd, frequencyTd, nextArrivalTd, minutesAwayTd)
+            $("#train-table").append(tR);
             
+            // want to make table scroll after a certain number of entries: read this https://stackoverflow.com/questions/2117320/set-maximum-displayed-rows-count-for-html-table
         })
 })
 

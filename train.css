@@ -1,10 +1,29 @@
+@font-face {
+    font-family: Smoke;
+    src: url(./media/AlphaSmoke.TTF)
+}
+
 body {
-    /* color: white; */
+    background-color: #A9E5BB;
 }
 
 #title {
-    background-color:#a33d01 !important;
+    font-family: Smoke;
+    background-color:#E07A5F !important;
     /* color: rgb(56, 56, 56) !important; */
+}
+
+#secondary-title {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 24px;
+}
+
+.header-color {
+    background-color: #FCF6B1;
+}
+
+.card-body {
+    background-color: #74A4BC;
 }
 
 #train-table th,
@@ -12,3 +31,7 @@ body {
       display: inline-block;
       width: 20%;
     }
+
+#choo-choo-btn {
+    background-color: #2D1E2F;
+}
