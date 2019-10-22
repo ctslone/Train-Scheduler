@@ -34,6 +34,13 @@ body {
       width: 20%;
     }
 
+#scroll {
+    max-height: 350px;
+    width: 100%;
+    display: inline-block;
+    overflow: scroll;
+}
+
 #choo-choo-btn {
     background-color: #E07A5F;
 }

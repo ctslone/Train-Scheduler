@@ -59,10 +59,13 @@ $(document).ready(function () {
             var nameTd = $("<td>").text(sv.trainName);
             var destinationTd =$("<td>").text(sv.destination);
             var frequencyTd = $("<td>").text(sv.frequency);
-            var nextArrivalTd =$("<td>");
+            var nextArrivalTd =$("<td>").text(moment(firstTime).format("HH:mm"));
             var minutesAwayTd =$("<td>");
 
             var currentTime = moment();
+
+            // logging the times
+            console.log("Next time is " + nextArrivalTd)
 
 
             var tR = $("<tr>");
