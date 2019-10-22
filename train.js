@@ -71,11 +71,19 @@ $(document).ready(function () {
             
             // want to make table scroll after a certain number of entries: read this https://stackoverflow.com/questions/2117320/set-maximum-displayed-rows-count-for-html-table
         })
+
+        // playing a sweet train sound when the user adds a train!
+        trainHorn();
 })
 
 
+// FUNCTIONS
 
-
+function trainHorn() {
+    var trainHorn = document.createElement("audio");
+    trainHorn.src = "media/horn.mp3"
+    trainHorn.play();
+}
 
 
 
