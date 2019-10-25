@@ -44,7 +44,10 @@ $(document).ready(function () {
         });
 
         // clearing the inputs
-        $("#train-name-input, #destination-input, #frequency-input, #first-time-input").val('')
+        $("#train-name-input, #destination-input, #frequency-input, #first-time-input").val('');
+
+         // playing a sweet train sound when the user adds a train!
+         trainHorn();
     })
 
         // listener for adding a child to the DB
@@ -89,8 +92,6 @@ $(document).ready(function () {
             $("#train-table").prepend(tR);
             // console.log("added")
             
-            // playing a sweet train sound when the user adds a train!
-            trainHorn();
         })
 
 // OTHER FUNCTIONS
